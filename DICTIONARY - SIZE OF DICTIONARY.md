@@ -22,9 +22,20 @@ To write a Python program to print the size of a dictionary using `getsizeof()` 
 ### PROGRAM
 
 ```
-#Reg.No
-#Name
-#Add Your Code Here
+# Name: Vikram GS
+# Reg No: 212222060296
+
+d = {}
+
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+    key = input("Enter key: ")
+    value = input("Enter value: ")
+    d[key] = value
+
+print("Dictionary:", d)
+print("Size of dictionary:", len(d))
 
 
 
@@ -32,5 +43,17 @@ To write a Python program to print the size of a dictionary using `getsizeof()` 
 
 ### OUTPUT
 
+Enter number of elements: 3
+Enter key: a
+Enter value: 10
+Enter key: b
+Enter value: 20
+Enter key: c
+Enter value: 30
+Dictionary: {'a': '10', 'b': '20', 'c': '30'}
+Size of dictionary: 3
+
 
 ### RESULT
+
+The size of the dictionary is determined successfully.
