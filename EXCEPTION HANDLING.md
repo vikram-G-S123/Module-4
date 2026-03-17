@@ -23,12 +23,33 @@ To create a Python program that prompts the user for a list of grades separated 
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
+# Name: Vikram GS
+# Reg No: 212222060296
+
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    result = a / b
+    print("Result:", result)
+
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed")
+
+except ValueError:
+    print("Error: Invalid input")
+
+finally:
+    print("Program completed")
 
 ```
 
 ### OUTPUT
 
+Enter first number: 10
+Enter second number: 0
+Error: Division by zero is not allowed
+Program completed
+
 ### RESULT
+
+Exception handling is performed successfully to handle runtime errors.
