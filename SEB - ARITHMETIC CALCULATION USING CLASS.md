@@ -36,10 +36,49 @@ To write a Python program to perform addition and division operations using a cl
 
 ```
 
+# Name: Vikram GS
+# Reg No: 212222060296
 
+class Calculator:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a + self.b
+
+    def sub(self):
+        return self.a - self.b
+
+    def mul(self):
+        return self.a * self.b
+
+    def div(self):
+        return self.a / self.b
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+
+c = Calculator(x, y)
+
+print("Addition:", c.add())
+print("Subtraction:", c.sub())
+print("Multiplication:", c.mul())
+print("Division:", c.div())
 
 ```
 
 ### OUTPUT
 
+Enter first number: 10
+Enter second number: 5
+Addition: 15
+Subtraction: 5
+Multiplication: 50
+Division: 2.0
+
+
 ### RESULT
+
+
+Arithmetic operations are performed successfully using class methods.
