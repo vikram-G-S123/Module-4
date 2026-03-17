@@ -30,11 +30,38 @@ To write a Python program that reads a file and counts the frequency of each cha
 ### PROGRAM
 
 ```
+# Name: Vikram GS
+# Reg No: 212222060296
+
+filename = input("Enter file name: ")
+
+with open(filename, 'r') as f:
+    data = f.read()
+
+freq = {}
+
+for ch in data:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+print("Character Frequency:")
+for key, value in freq.items():
+    print(key, ":", value)
 
 ```
 
 
 ### OUTPUT
 
+Enter file name: sample.txt
+Character Frequency:
+h : 1
+e : 1
+l : 2
+o : 1
 
 ### RESULT
+
+Character frequency in a file is calculated successfully.
