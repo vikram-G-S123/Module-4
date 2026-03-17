@@ -28,16 +28,32 @@ To write a Python program to take the radius from the user and find the area of 
 ### PROGRAM
 
 ```
+# Name: Vikram GS
+# Reg No: 212222060296
 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+r = float(input("Enter radius: "))
+c = Circle(r)
+
+print("Area of Circle:", c.area())
 
 
 ```
 
 ### OUTPUT
 
-
+Enter radius: 5
+Area of Circle: 78.5
 
 ### RESULT
+
+The area of the circle is calculated successfully using class and object.
 
 
 
